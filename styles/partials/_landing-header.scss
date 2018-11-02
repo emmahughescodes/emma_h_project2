@@ -1,3 +1,28 @@
 body {
     background: $primary-color;
 }
+
+.header-nav {
+    // ul
+    &__list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }    
+    // li
+    &__list-item {
+        padding: 5px;
+    }
+    // a tag
+    &__link-item {
+        text-decoration: none;
+        &--brand {
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+}
+
+
+

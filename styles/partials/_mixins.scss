@@ -1,6 +1,10 @@
-// @mixin font-Face($font-family, $size-value) {
-//     font-size: $size-value;
-//     font-family: $font-family;
-//     color: 
-// }
+@mixin primary-font($size-value) {
+    font-size: $size-value;
+    color: ;
+}
+
+@mixin secondary-font($size-value) {
+    font-size: $size-value;
+    color: ;
+}
 
