@@ -1,14 +1,16 @@
-body {
-    background: $primary-color;
-}
+//main page header
 
 .header-nav {
+    background-color: $primary-color; 
+    height: 70vh;
+    position: relative;
     // ul
     &__list {
         display: flex;
         list-style: none;
         justify-content: center;
         align-items: center;
+        
     }    
     // li
     &__list-item {
@@ -24,7 +26,48 @@ body {
     }
 }
 
-.emblem .slogan {
+.header-content {
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid blue;
+}
+.profile-pic {
+    border: 1px solid purple;
+    display: inline-block;
+    width: 30%;
+    // position: absolute;
+    // bottom: 100%;
+    // left: 0;
+    &__image--framed {
+        width: 100%;
+        display: block;
+        border: 1px solid red;
+        box-shadow: 10px 10px #ffffff;
+    }
+}
+
+.blogger-name h1 {
+    border: 1px solid green;
+    position: relative;
+    margin-left: 5%;
+    @include test(92px);
+}
+
+
+.emblem img {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    z-index: 9;
+}
+
+.seo {
     display: none;
 }
 

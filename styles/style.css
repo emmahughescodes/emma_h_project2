@@ -133,29 +133,83 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-body {
-  background: #b9dde7; }
+ul, li {
+  padding: 0;
+  margin: 0; }
 
-.header-nav__list {
+h1, h2, h3 {
+  padding: 0;
+  margin: 0; }
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px dotted pink; }
+
+.header-nav {
+  background-color: #b9dde7;
+  height: 70vh;
+  position: relative; }
+  .header-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header-nav__list-item {
+    padding: 5px; }
+  .header-nav__link-item {
+    text-decoration: none; }
+    .header-nav__link-item--brand {
+      font-size: 20px;
+      text-decoration: none; }
+
+.header-content {
+  position: absolute;
+  top: 20px;
+  left: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  border: 1px solid blue; }
 
-.header-nav__list-item {
-  padding: 5px; }
+.profile-pic {
+  border: 1px solid purple;
+  display: inline-block;
+  width: 30%; }
+  .profile-pic__image--framed {
+    width: 100%;
+    display: block;
+    border: 1px solid red;
+    -webkit-box-shadow: 10px 10px #ffffff;
+    box-shadow: 10px 10px #ffffff; }
 
-.header-nav__link-item {
-  text-decoration: none; }
-  .header-nav__link-item--brand {
-    font-size: 20px;
-    text-decoration: none; }
+.blogger-name {
+  border: 1px solid green;
+  position: relative;
+  margin-left: 5%; }
 
-.emblem .slogan {
+.emblem img {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  z-index: 9; }
+
+.seo {
   display: none; }
