@@ -1,0 +1,38 @@
+.intro-bio {
+    background-color: $white-shade;
+}
+.about {
+    padding: 5% 0;
+    background-color: $white-shade;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid green;
+}
+
+.bio {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    width: 55%; 
+
+    &__title {
+        @include secondary-font(42px);
+    }
+
+    &__text {
+        @include primary-font(20px);
+    }
+
+    &__button {
+        text-decoration: none;
+        @include senary-font(20px);
+        text-transform: uppercase;
+        padding: 8px 10px;
+        background-color: $accent;
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+    }
+}
+

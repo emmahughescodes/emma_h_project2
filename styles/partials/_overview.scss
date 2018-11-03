@@ -1,0 +1,48 @@
+.overview {
+    background-color: $white-shade;
+    &--image {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    &--content {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5%;
+        padding-bottom:2%;
+    }
+
+    &--item {
+        @include senary-font(32px);
+        margin-left: 10px;
+    }
+
+    &--photos, &--about, &--blog, &--contact {
+        border: 1px solid black;
+        width: 50%;
+        padding-bottom: 3%;
+    }
+
+    &--title {
+        display: flex;
+        align-items: center;
+    }
+
+    &--text {
+        margin-left: 55px;
+    }
+}
+
+.background {
+    background-color: pink;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+

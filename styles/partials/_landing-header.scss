@@ -14,21 +14,30 @@
     }    
     // li
     &__list-item {
-        padding: 5px;
+        padding: 5px 15px;
+        
     }
     // a tag
     &__link-item {
         text-decoration: none;
+        @include quinary-font(16px);
         &--brand {
             font-size: 20px;
             text-decoration: none;
+        }
+        &:hover {
+            color: $white-shade;
+        }
+        &--brand {
+            @include quinary-font(25px);
+            padding: 5px 20px;
         }
     }
 }
 
 .header-content {
     position: absolute;
-    top: 20px;
+    top: 45px;
     left: 10%;
     display: flex;
     flex-direction: row;
@@ -36,13 +45,14 @@
     align-items: center;
     border: 1px solid blue;
 }
+
 .profile-pic {
     border: 1px solid purple;
-    display: inline-block;
-    width: 30%;
-    // position: absolute;
-    // bottom: 100%;
-    // left: 0;
+    // display: inline-block;
+    width: 450px;
+    position: absolute;
+    top: 10%;
+    left: 0;
     &__image--framed {
         width: 100%;
         display: block;
@@ -51,20 +61,25 @@
     }
 }
 
-.blogger-name h1 {
+.blogger {
     border: 1px solid green;
+    margin-left: 45%;
+    margin-top: 20%;
     position: relative;
-    margin-left: 5%;
-    @include test(92px);
 }
 
+.blogger {
+    &--name {
+    @include quaternary-font(175px);
+    }
+}
 
-.emblem img {
-    display: none;
+.emblem {
     position: absolute;
-    top: 40px;
-    left: 50px;
-    z-index: 9;
+    bottom: 16%;
+    left: 72%;
+    z-index: 1;
+    width: 37%;
 }
 
 .seo {
