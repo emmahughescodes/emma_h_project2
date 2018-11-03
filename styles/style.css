@@ -355,3 +355,48 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.blog-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.blog-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.blog--content {
+  width: 50%; }
+
+.blog__title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  color: #171717;
+  letter-spacing: 1px;
+  text-transform: uppercase; }
+
+.blog__text {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  color: #171717;
+  line-height: 32px; }
+
+.blog__button {
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  color: #171717;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 32px;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  background-color: #f38d8d;
+  display: inline-block;
+  width: 30%;
+  text-align: center; }

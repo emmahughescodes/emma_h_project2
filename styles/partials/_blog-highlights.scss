@@ -1,0 +1,40 @@
+.blog-top {
+    display: flex;
+    &--pic {
+
+    }
+}
+
+.blog-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    &--pic {
+        
+    }
+}
+
+.blog {
+    &--content {
+        width: 50%;
+    }
+
+    &__title {
+        @include secondary-font(42px);
+    }
+
+    &__text {
+        @include primary-font(20px);
+    }
+
+    &__button {
+        text-decoration: none;
+        @include senary-font(20px);
+        text-transform: uppercase;
+        padding: 8px 10px;
+        background-color: $accent;
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+    }
+}
+
