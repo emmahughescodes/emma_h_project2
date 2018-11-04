@@ -1,0 +1,9 @@
+.footer {
+    background-color: $black;
+    &__text {
+        text-align: center;
+        padding: 10px;
+        @include primary-font(20px);
+        color: $white-shade;
+    }
+}

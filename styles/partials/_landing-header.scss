@@ -2,7 +2,7 @@
 
 .header-nav {
     background-color: $primary-color; 
-    height: 70vh;
+    height: 80vh;
     position: relative;
     // ul
     &__list {
@@ -49,7 +49,7 @@
 .profile-pic {
     border: 1px solid purple;
     // display: inline-block;
-    width: 450px;
+    width: 400px;
     position: absolute;
     top: 10%;
     left: 0;
@@ -70,7 +70,7 @@
 
 .blogger {
     &--name {
-    @include quaternary-font(175px);
+    @include quaternary-font(120px);
     }
 }
 

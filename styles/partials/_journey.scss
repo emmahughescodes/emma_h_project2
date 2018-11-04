@@ -1,0 +1,37 @@
+.journey {
+    padding: 7% 0;
+    background-color: $white-shade;
+
+    &--section {
+        display: flex;
+    }
+
+    &__image--pic {
+        box-shadow: 10px 10px $tertiary-color;
+    }
+
+    &--content {
+        margin-left: 10%;
+    }
+
+    &__title {
+        @include secondary-font(42px);
+    }
+
+    &__text {
+        @include primary-font(20px);
+    }
+
+    &__button {
+        text-decoration: none;
+        @include senary-font(20px);
+        text-transform: uppercase;
+        padding: 8px 10px;
+        background-color: $accent;
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+    }
+
+
+}

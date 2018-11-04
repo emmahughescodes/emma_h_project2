@@ -9,8 +9,7 @@
     &--content {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 5%;
-        padding-bottom:2%;
+        padding: 5% 0;
     }
 
     &--item {
@@ -27,22 +26,30 @@
     &--title {
         display: flex;
         align-items: center;
+        @include secondary-font(42px);
+    }
+
+    &--background {
+        background-color: pink;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &--icon {
+        font-size: 20px;
     }
 
     &--text {
         margin-left: 55px;
+        @include primary-font(20px);
     }
 }
 
-.background {
-    background-color: pink;
-    width: 45px;
-    height: 45px;
-    border-radius: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 

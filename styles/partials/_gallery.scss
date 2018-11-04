@@ -1,0 +1,16 @@
+.gallery {
+    &__list {
+        display: flex;
+        &--item {
+            text-decoration: none;
+            list-style: none;
+            width: calc((100% - 60px) / 3);
+        }
+        &--item:nth-child(2) {
+            margin: 0 30px;
+        }
+        &--image {
+            width: 100%;
+        }
+    }
+}
