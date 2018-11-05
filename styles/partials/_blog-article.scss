@@ -1,0 +1,20 @@
+.article-main {
+    
+    background-color: pink;    
+    margin-left: 5%;
+    width: 65%;
+}
+
+.article {
+    padding: 3%;
+}
+
+
+.comment {
+    background-color: green;
+    margin: 15px 0;
+    &__user {
+        margin: 10px 0;
+        background-color: purple;    
+    }
+}

@@ -2,6 +2,13 @@ body {
     background-color: red;
 }
 
+.main-content {
+    display: flex;
+    // justify-content: flex-start;
+    padding-top: 15%;
+    // flex-wrap: wrap;
+}
+
 .blog-header {
     background: url(../assets/blog-image-1.jpg); 
     background-size: cover;
@@ -15,7 +22,6 @@ body {
 
 .blog-bio {
     padding: 10%;
-    margin-top: 25%;
     margin-bottom: 15px;
     background-color: #fff;
 
@@ -28,12 +34,10 @@ body {
 
     &__title {
         margin: 0;
-        // padding: 0 10%;
         @include secondary-font(32px);
     }
 
     &__text {
-        // padding: 0 10%;
         margin: 0;
         @include primary-font(20px);
     }
@@ -56,3 +60,4 @@ body {
     }
 
 }   
+

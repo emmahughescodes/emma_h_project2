@@ -532,6 +532,12 @@ body {
 body {
   background-color: red; }
 
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15%; }
+
 .blog-header {
   background: url(../assets/blog-image-1.jpg);
   background-size: cover;
@@ -543,7 +549,6 @@ body {
 
 .blog-bio {
   padding: 10%;
-  margin-top: 25%;
   margin-bottom: 15px;
   background-color: #fff; }
   .blog-bio__image {
@@ -580,3 +585,18 @@ body {
     font-size: 20px;
     color: #171717;
     line-height: 32px; }
+
+.article-main {
+  background-color: pink;
+  margin-left: 5%;
+  width: 65%; }
+
+.article {
+  padding: 3%; }
+
+.comment {
+  background-color: green;
+  margin: 15px 0; }
+  .comment__user {
+    margin: 10px 0;
+    background-color: purple; }
