@@ -141,6 +141,9 @@ h1, h2, h3 {
   padding: 0;
   margin: 0; }
 
+a {
+  text-decoration: none; }
+
 .wrapper {
   max-width: 1640px;
   width: 80%;
@@ -150,11 +153,12 @@ h1, h2, h3 {
 body {
   background-color: pink; }
 
-.header-nav {
+.header {
   background-color: #b9dde7;
   height: 80vh;
   position: relative; }
   .header-nav__list {
+    background-color: #b9dde7;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -498,18 +502,21 @@ body {
     width: 30%;
     text-align: center; }
 
-.gallery__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .gallery__list--item {
-    text-decoration: none;
-    list-style: none;
-    width: calc((100% - 60px) / 3); }
-  .gallery__list--item:nth-child(2) {
-    margin: 0 30px; }
-  .gallery__list--image {
-    width: 100%; }
+.gallery {
+  padding: 7% 0;
+  background-color: #fff; }
+  .gallery__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .gallery__list--item {
+      text-decoration: none;
+      list-style: none;
+      width: calc((100% - 60px) / 3); }
+    .gallery__list--item:nth-child(2) {
+      margin: 0 30px; }
+    .gallery__list--image {
+      width: 100%; }
 
 .footer {
   background-color: #171717; }
@@ -521,3 +528,55 @@ body {
     color: #171717;
     line-height: 32px;
     color: #f6f6f6; }
+
+body {
+  background-color: red; }
+
+.blog-header {
+  background: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh; }
+
+.info {
+  width: 30%; }
+
+.blog-bio {
+  padding: 10%;
+  margin-top: 25%;
+  margin-bottom: 15px;
+  background-color: #fff; }
+  .blog-bio__image {
+    padding-bottom: 5%; }
+    .blog-bio__image--pic {
+      width: 100%; }
+  .blog-bio__title {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    color: #171717;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .blog-bio__text {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    line-height: 32px; }
+
+.recent-posts {
+  background-color: #fff;
+  padding: 10%; }
+  .recent-posts__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    color: #171717;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .recent-posts__nav {
+    padding-left: 8%; }
+  .recent-posts__list--item {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    line-height: 32px; }

@@ -1,11 +1,12 @@
 //main page header
 
-.header-nav {
+.header {
     background-color: $primary-color; 
     height: 80vh;
     position: relative;
     // ul
-    &__list {
+    &-nav__list {
+        background-color: $primary-color;
         display: flex;
         list-style: none;
         justify-content: center;
@@ -13,12 +14,12 @@
         
     }    
     // li
-    &__list-item {
+    &-nav__list-item {
         padding: 5px 15px;
         
     }
     // a tag
-    &__link-item {
+    &-nav__link-item {
         text-decoration: none;
         @include quinary-font(16px);
         &--brand {
