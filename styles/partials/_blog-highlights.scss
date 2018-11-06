@@ -30,8 +30,6 @@
         @include primary-font(20px);
     }
 
-    
-
     &__button {
         text-decoration: none;
         @include senary-font(20px);
@@ -42,7 +40,6 @@
         width: 30%;
         text-align: center;
     }
-
 }
 
 .blog-bottom {

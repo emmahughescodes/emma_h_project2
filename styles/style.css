@@ -482,11 +482,11 @@ body {
     color: #171717;
     line-height: 32px; }
 
-@media (max-width: 530px) {
+@media (max-width: 768px) {
   .overview--photos, .overview--about, .overview--blog, .overview--contact {
     border: 1px solid black;
     width: 100%;
-    padding-bottom: 3%; } }
+    padding: 3%; } }
 
 .blog-top {
   display: -webkit-box;
