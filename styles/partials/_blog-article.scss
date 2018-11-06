@@ -62,3 +62,27 @@
         width: 100%;
     }
 }
+
+/* mobile view */
+@media (max-width: 480px) {
+    
+
+    .comment {
+        margin: 0;
+        padding: 0;
+        &__user {
+            flex-direction: column;
+        }
+        &__image {
+            padding: 3%;
+            width: 100%;
+            &--profile {
+                width: 89px;
+            }
+        }
+        &__content {
+            width: 100%;
+            display: block;
+        }
+    }
+}

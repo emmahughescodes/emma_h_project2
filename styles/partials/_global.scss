@@ -8,3 +8,20 @@
 body {
     background-color: pink;
 }
+@media (max-width: 1080px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+    }
+}
