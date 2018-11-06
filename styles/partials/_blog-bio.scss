@@ -16,7 +16,7 @@ body {
     &__title {
         @include quaternary-font(50px);
         position: relative;
-        top: 26vh;
+        bottom: -90px;
     }
 }
 

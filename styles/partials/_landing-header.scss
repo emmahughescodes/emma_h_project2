@@ -112,7 +112,16 @@
     }
 }
 
+@media (max-width: 661px) {
+    .header {
+        height: 70vh;
+    }
+}
+
 @media (max-width: 590px) {
+    .header {
+        height: 70vh;
+    }
     .blogger {
         
         margin-left: 39%;
@@ -127,11 +136,14 @@
 }
 
 @media (max-width: 500px) {
+    .header {
+        height: 70vh;
+    }
     .blogger {
         
         margin-left: 39%;
         &--name {
-            @include quaternary-font(70px);
+            @include quaternary-font(60px);
             position: static;
         }
     }
@@ -150,11 +162,11 @@
         left: 80px;
     }
     .header-content {
-        height: 80vh;
+        height: 75vh;
     }
     .blogger {
-        margin-left: 4%;
-        margin-top: 38%;
+        margin-left: 7%;
+        margin-top: 20%;
     }
 
     .blogger--name {
@@ -162,5 +174,20 @@
     }
     .emblem {
         bottom: 24px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .blogger {
+        margin-left: 4%;
+        margin-top: 38%;
+    }
+}
+
+@media (max-width: 390px) {
+    .blogger {
+        margin-left: 14%;
+        margin-top: 64%;
     }
 }
