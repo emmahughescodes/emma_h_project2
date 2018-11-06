@@ -1,0 +1,59 @@
+
+@mixin primary-font($size-value) {
+    font-family: 'Cabin', sans-serif;
+    font-size: $size-value;
+    color: #171717;
+    line-height: 32px;
+}
+
+
+@mixin secondary-font($size-value) {
+    font-family: 'Oswald', sans-serif;
+    font-size: $size-value;
+    color: $black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@mixin tertiary-font($size-value) {
+    font-family: 'Oswald', sans-serif;
+    font-size: $size-value;
+    color: $black;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+@mixin quaternary-font($size-value) {
+    font-family: 'Oswald', sans-serif;
+    font-size: $size-value;
+    color: $black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 92px;
+    text-transform: uppercase;
+}
+
+@mixin quinary-font($size-value) {
+    font-family: 'Oswald', sans-serif;
+    font-size: $size-value;
+    color: $black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+@mixin senary-font($size-value) {
+    font-family: 'Oswald', sans-serif;
+    font-size: $size-value;
+    color: $black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+@mixin test($size-value) {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: $size-value;
+    color: red;
+}

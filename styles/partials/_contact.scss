@@ -1,0 +1,55 @@
+.contact-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10%;
+}
+
+.contact-header {
+    background: url(../assets/contact-image-1.jpg); 
+    background-size: cover;
+	background-position: center;
+    height: 40vh;    
+}
+
+.social-media {
+    padding: 3% 2%;
+    align-self: flex-start;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    width: 30%;
+    &__list {
+        display: flex;
+
+    }
+    &__icon {
+        list-style: none;
+        &--link {
+            font-size: 30px;
+            padding-right: 35px;
+            color: $tertiary-color;
+            &:hover {
+            color: $secondary-color;
+            }
+        }
+    }
+    &--email {
+        @include senary-font(20px);
+        padding: 15px 0;
+    }
+
+
+
+    &-contact {
+        &__list {
+            &--item {
+                list-style: none;
+                @include primary-font(20px);
+            }
+        }
+    }
+}
+
+.contact-form {
+    width: 65%;
+    margin-left: 5%;
+}

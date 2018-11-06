@@ -7,25 +7,30 @@
         width: 50%;
         display: flex;
         justify-content: flex-end;
-        background-color: $tertiary-color;
     }
 
     &--image {
-        box-shadow: 10px 10px red;
+        position: relative;
+        bottom: 24px;
+        box-shadow: 10px 10px $tertiary-color, -200px 10px $tertiary-color;
     }
 
     &--content {
         width: 50%;
         border: 1px solid red;
+        margin-left: 5%;
     }
 
     &__title {
+        margin-top: 5%;
         @include secondary-font(42px);
     }
 
     &__text {
         @include primary-font(20px);
     }
+
+    
 
     &__button {
         text-decoration: none;
@@ -50,20 +55,29 @@
     }
 
     &--image {
-        box-shadow: 10px 10px blue;
+        box-shadow: 10px 10px $secondary-color, 200px 10px $secondary-color;
+        position: relative;
+        top: 14px;
     }
 
     &--content {
         width: 50%;
         border: 1px solid red;
+        margin-right: 5%;
     }
 
     &__title {
+        
         @include secondary-font(42px);
     }
 
     &__text {
         @include primary-font(20px);
+    }
+
+    &__case {
+        display: flex;
+        justify-content: flex-end;
     }
 
     &__button {

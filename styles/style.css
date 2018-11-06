@@ -133,6 +133,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
 ul, li {
   padding: 0;
   margin: 0; }
@@ -382,15 +395,18 @@ body {
     display: flex;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end;
-    background-color: #227284; }
+    justify-content: flex-end; }
   .blog-top--image {
-    -webkit-box-shadow: 10px 10px red;
-    box-shadow: 10px 10px red; }
+    position: relative;
+    bottom: 24px;
+    -webkit-box-shadow: 10px 10px #227284, -200px 10px #227284;
+    box-shadow: 10px 10px #227284, -200px 10px #227284; }
   .blog-top--content {
     width: 50%;
-    border: 1px solid red; }
+    border: 1px solid red;
+    margin-left: 5%; }
   .blog-top__title {
+    margin-top: 5%;
     font-family: 'Oswald', sans-serif;
     font-size: 42px;
     color: #171717;
@@ -433,11 +449,14 @@ body {
     -ms-flex-pack: start;
     justify-content: flex-start; }
   .blog-bottom--image {
-    -webkit-box-shadow: 10px 10px blue;
-    box-shadow: 10px 10px blue; }
+    -webkit-box-shadow: 10px 10px #68b0c1, 200px 10px #68b0c1;
+    box-shadow: 10px 10px #68b0c1, 200px 10px #68b0c1;
+    position: relative;
+    top: 14px; }
   .blog-bottom--content {
     width: 50%;
-    border: 1px solid red; }
+    border: 1px solid red;
+    margin-right: 5%; }
   .blog-bottom__title {
     font-family: 'Oswald', sans-serif;
     font-size: 42px;
@@ -449,6 +468,13 @@ body {
     font-size: 20px;
     color: #171717;
     line-height: 32px; }
+  .blog-bottom__case {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
   .blog-bottom__button {
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
@@ -536,13 +562,23 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 15%; }
+  padding-top: 10%; }
 
 .blog-header {
   background: url(../assets/blog-image-1.jpg);
   background-size: cover;
   background-position: center;
   height: 40vh; }
+  .blog-header__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    color: #171717;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 92px;
+    text-transform: uppercase;
+    position: relative;
+    top: 26vh; }
 
 .info {
   width: 30%; }
@@ -587,16 +623,151 @@ body {
     line-height: 32px; }
 
 .article-main {
-  background-color: pink;
   margin-left: 5%;
   width: 65%; }
 
 .article {
-  padding: 3%; }
+  background-color: #fff;
+  padding: 3%;
+  margin-bottom: 15px;
+  border-bottom: 4px solid #227284; }
+  .article__title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    color: #171717;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .article__text {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    line-height: 32px; }
 
 .comment {
   background-color: green;
   margin: 15px 0; }
   .comment__user {
     margin: 10px 0;
-    background-color: purple; }
+    background-color: purple;
+    padding: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .comment__user:last-child {
+      border-bottom: 4px solid #227284; }
+  .comment__image {
+    width: 15%; }
+    .comment__image--profile {
+      width: 100%;
+      display: block; }
+  .comment__content {
+    width: 82%;
+    margin-left: 3%; }
+  .comment__title {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    line-height: 32px; }
+  .comment__text {
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    line-height: 32px;
+    margin: 0; }
+
+input, label {
+  padding: 0;
+  margin: 0; }
+
+.form__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .form__contact--name-input {
+    padding: 3%;
+    border: none;
+    width: 49%;
+    margin-right: 1%;
+    margin-bottom: 3%; }
+  .form__contact--email-input {
+    padding: 3%;
+    border: none;
+    width: 49%;
+    margin-left: 1%;
+    margin-bottom: 3%; }
+  .form__contact--text-input {
+    border: none;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 3%;
+    padding: 3%; }
+  .form__contact--button {
+    border: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 32px;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    background-color: #f38d8d;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15%; }
+
+.contact-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 10%; }
+
+.contact-header {
+  background: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh; }
+
+.social-media {
+  padding: 3% 2%;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  width: 30%; }
+  .social-media__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .social-media__icon {
+    list-style: none; }
+    .social-media__icon--link {
+      font-size: 30px;
+      padding-right: 35px;
+      color: #227284; }
+      .social-media__icon--link:hover {
+        color: #68b0c1; }
+  .social-media--email {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 32px;
+    padding: 15px 0; }
+  .social-media-contact__list--item {
+    list-style: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    color: #171717;
+    line-height: 32px; }
+
+.contact-form {
+  width: 65%;
+  margin-left: 5%; }

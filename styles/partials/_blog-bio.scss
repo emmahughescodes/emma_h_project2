@@ -4,9 +4,7 @@ body {
 
 .main-content {
     display: flex;
-    // justify-content: flex-start;
-    padding-top: 15%;
-    // flex-wrap: wrap;
+    padding-top: 10%;
 }
 
 .blog-header {
@@ -14,6 +12,11 @@ body {
     background-size: cover;
 	background-position: center;
     height: 40vh;    
+    &__title {
+        @include quaternary-font(50px);
+        position: relative;
+        top: 26vh;
+    }
 }
 
 .info {
