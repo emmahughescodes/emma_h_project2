@@ -1,5 +1,5 @@
-body {
-    background-color: red;
+.background-blog {
+    background-color: $white-shade;
 }
 
 .main-content {
@@ -16,7 +16,7 @@ body {
     &__title {
         @include quaternary-font(50px);
         position: relative;
-        bottom: -90px;
+        bottom: -190px;
     }
 }
 
@@ -119,11 +119,6 @@ body {
         margin: 0;
     }
 
-    // .comment {
-    //     display: block;
-    //     width: 100%;
-    // }
-
 }
 
 // media query to support small profile images
@@ -138,6 +133,15 @@ body {
     .blog-bio__image {
         width: 80%;
     }    
+    .info {
+        padding-top: 10px;
+    }
+    .blog-header {
+        &__title {
+            @include secondary-font(32px);
+            bottom: -210px;
+        }
+    }
 }
 
 /* mobile view */
@@ -156,6 +160,13 @@ body {
             display: block;
             width: 100%;
         }   
+    }
+
+    .blog-header {
+        &__title {
+            @include secondary-font(25px);
+            bottom: -220px;
+        }
     }
 
 }

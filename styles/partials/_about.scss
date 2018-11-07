@@ -6,11 +6,9 @@
     background-color: $white-shade;
     display: flex;
     justify-content: flex-end;
-    border: 1px solid green;
 }
 
 .bio {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-content: flex-end;
@@ -33,5 +31,14 @@
         background-color: $accent;
         display: inline-block;
         text-align: center;
+    }
+}
+
+
+@media (max-width: 644px) {
+    .bio {
+        display: block;
+        width: 100%;
+        padding: 3%;
     }
 }

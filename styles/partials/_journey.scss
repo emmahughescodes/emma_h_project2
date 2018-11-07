@@ -34,3 +34,28 @@
 
 
 }
+
+
+@media (max-width: 644px) {
+    .journey {
+        &--section {
+            display: block;
+        }
+        &__image--pic {
+            box-shadow: 10px 10px $tertiary-color;
+        }
+        &--content {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+        &__title {
+            margin-top: 10px;
+        }
+        &__image {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+}

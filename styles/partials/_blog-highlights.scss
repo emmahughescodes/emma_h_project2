@@ -3,7 +3,6 @@
     margin-bottom: 5%;
 
     &--pic {
-        border: 1px solid blue;
         width: 50%;
         display: flex;
         justify-content: flex-end;
@@ -18,7 +17,6 @@
 
     &--content {
         width: 50%;
-        border: 1px solid red;
         margin-left: 5%;
     }
 
@@ -60,12 +58,12 @@
 
     &--content {
         width: 50%;
-        border: 1px solid red;
         margin-right: 5%;
+        padding-bottom: 5%;
     }
 
     &__title {
-        
+        margin-top: 5%;
         @include secondary-font(42px);
     }
 
@@ -97,6 +95,11 @@
         &--pic {
             width: 100%;
         }
+        &--content {
+            width: 100%;
+            margin: 0;
+            padding: 3%;
+        }
     }
 
     .blog-bottom {
@@ -104,14 +107,27 @@
         &--pic {
             width: 100%;
         }
+        &--content {
+            width: 100%;
+            margin: 0;
+            padding: 3%;
+        }
     }
+    
 }
 
 @media (max-width: 565px) {
     .blog-bottom {
         &--image {
             box-shadow: none;
-            box-shadow: 10px 10px blue; 
         }
+        &__case {
+            justify-content: flex-start;
+        }
+    }
+    .blog-top {
+        &--image {
+            box-shadow: none;
+        } 
     }
 }

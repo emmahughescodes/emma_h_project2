@@ -1,5 +1,4 @@
-.article-main {
-    // background-color: blue;    
+.article-main { 
     margin-left: 5%;
     width: 65%;
 }
@@ -17,13 +16,11 @@
     }
 }
 
-
 .comment {
-    background-color: green;
     margin: 15px 0;
     &__user {
         margin: 10px 0;
-        background-color: purple;  
+        background-color: #fff;  
         padding: 3%;  
         display: flex;
         &:last-child {
@@ -65,8 +62,6 @@
 
 /* mobile view */
 @media (max-width: 480px) {
-    
-
     .comment {
         margin: 0;
         padding: 0;
