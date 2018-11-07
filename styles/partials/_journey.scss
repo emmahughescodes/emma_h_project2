@@ -30,6 +30,9 @@
         background-color: $accent;
         display: inline-block;
         text-align: center;
+        &:hover {
+            background-color: $secondary-color;
+        }
     }
 
 

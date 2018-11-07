@@ -439,6 +439,8 @@ body {
     background-color: #f38d8d;
     display: inline-block;
     text-align: center; }
+    .bio__button:hover {
+      background-color: #68b0c1; }
 
 @media (max-width: 644px) {
   .bio {
@@ -561,6 +563,8 @@ body {
     background-color: #f38d8d;
     display: inline-block;
     text-align: center; }
+    .blog-top__button:hover {
+      background-color: #68b0c1; }
 
 .blog-bottom {
   display: -webkit-box;
@@ -620,6 +624,8 @@ body {
     background-color: #f38d8d;
     display: inline-block;
     text-align: center; }
+    .blog-bottom__button:hover {
+      background-color: #68b0c1; }
 
 @media (max-width: 768px) {
   .blog-top {
@@ -687,6 +693,8 @@ body {
     background-color: #f38d8d;
     display: inline-block;
     text-align: center; }
+    .journey__button:hover {
+      background-color: #68b0c1; }
 
 @media (max-width: 644px) {
   .journey--section {
@@ -1005,6 +1013,8 @@ input, label {
     width: 100%;
     text-align: center;
     margin-bottom: 15%; }
+    .form__contact--button:hover {
+      background-color: #68b0c1; }
 
 .background-contact {
   background-color: #f6f6f6; }
