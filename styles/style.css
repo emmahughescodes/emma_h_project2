@@ -734,6 +734,23 @@ body {
     .gallery__list--image {
       width: 100%; }
 
+@media (max-width: 512px) {
+  .gallery__list--item {
+    width: calc((100% - 30px) / 2); }
+  .gallery__list--item:nth-child(2) {
+    margin: 0;
+    margin-left: 30px; }
+  .gallery__list--item:last-child {
+    display: none; } }
+
+@media (max-width: 380px) {
+  .gallery__list--item {
+    width: 100%; }
+  .gallery__list--item:nth-child(2) {
+    display: none; }
+  .gallery__list--item:last-child {
+    display: none; } }
+
 .footer {
   background-color: #171717; }
   .footer__text {

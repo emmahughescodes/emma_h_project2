@@ -16,3 +16,40 @@
         }
     }
 }
+
+// display two images on mobile devices and small tablets
+@media (max-width: 512px) {
+    .gallery {
+        &__list {
+            &--item {
+                width: calc((100% - 30px) / 2); 
+            }
+            &--item:nth-child(2) {
+                margin: 0;
+                margin-left: 30px;
+            }
+
+            &--item:last-child {
+                display: none;
+            }
+        }
+    }
+}
+
+// display one gallery image on very slim screens
+@media (max-width: 380px) {
+    .gallery {
+        &__list {
+            &--item {
+                width: 100%; 
+            }
+            &--item:nth-child(2) {
+                display: none;
+            }
+
+            &--item:last-child {
+                display: none;
+            }
+        }
+    }
+}
