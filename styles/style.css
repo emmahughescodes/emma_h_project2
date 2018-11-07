@@ -469,7 +469,12 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
     line-height: 32px;
-    margin-left: 10px; }
+    margin-left: 10px;
+    color: #171717; }
+  .overview--link {
+    color: #171717; }
+    .overview--link:hover {
+      color: #b9dde7; }
   .overview--photos, .overview--about, .overview--blog, .overview--contact {
     width: 50%;
     padding-bottom: 3%; }
@@ -501,7 +506,8 @@ body {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center; }
+    align-items: center;
+    background-color: #b9dde7; }
   .overview--icon {
     font-size: 20px; }
   .overview--text {

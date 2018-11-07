@@ -15,6 +15,13 @@
     &--item {
         @include senary-font(32px);
         margin-left: 10px;
+        color: $black;
+    }
+    &--link {
+        color: $black;
+        &:hover {
+            color: $primary-color;
+        }
     }
 
     &--photos, &--about, &--blog, &--contact {
@@ -36,6 +43,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        background-color: $primary-color;
     }
 
     &--icon {
